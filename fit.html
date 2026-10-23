@@ -1,450 +1,895 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ronnie Fitzz | Transform Your Body</title>
+<title>Ronnie Fitzz | Transform Your Body</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+<div class="login-screen" id="loginScreen">
+    <div class="login-panel">
+        <p class="small-title">WELCOME TO RONNIE FITZZ</p>
+        <h1>TRAIN <span>SMARTER.</span></h1>
+        <p class="login-copy">Log in to access your workouts, nutrition guidance and fitness profile.</p>
 
-    <header class="navbar">
+        <form id="loginForm" class="login-form">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input id="loginPassword" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+            </div>
+            <button type="submit" class="primary-btn login-btn">ENTER SITE</button>
+            <p class="login-message" id="loginMessage" role="alert"></p>
+        </form>
+    </div>
+</div>
 
-        <div class="logo">
-            RONNIE <span>FITZZ</span>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+     <div class="logo">
+       <span>RONNIE FITZZ</span>
+     </div>
+
+    <nav>
+ <a href="#home">Home</a>
+ <a href="#programs">Programs</a>
+ <a href="#about">About</a>
+ <a href="#nutrition">Nutrition</a>
+ <a href="#profile">Profile</a>
+ <a href="#contact">Contact</a>
+
+</nav>
+<div class="nav-actions">
+    <a href="#profile" class="nav-btn">PROFILE</a>
+    <button type="button" class="logout-btn" id="logoutButton">LOG OUT</button>
+</div>
+
+ </header>
+
+
+
+ <!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">NO EXCUSES. JUST RESULTS.</p>
+
+         <h1>
+            BUILD YOUR
+            <span>STRONGEST</span>
+            SELF.
+         </h1>
+
+         <p class="hero-text">
+            Train harder. Eat smarter. Stay consistent.
+            Ronnie Fitzz helps you build strength, improve
+            fitness and achieve the body you want.
+         </p>
+
+         <div class="hero-buttons">
+            <a href="#workout" class="primary-btn">START TRAINING</a>
+            <a href="#about" class="secondary-btn">LEARN MORE</a>
+         </div>
+
+     </div>
+
+     <div class="hero-card">
+
+         <div class="stat-card">
+            <h3>12+</h3>
+            <p>Training Programs</p>
         </div>
 
-        <nav>
+        <div class="stat-card">
+            <h3>5K+</h3>
+            <p>Fitness Members</p>
+         </div>
+
+        <div class="stat-card">
+            <h3>100%</h3>
+            <p>Motivation</p>
+        </div>
+
+     </div>
+
+</section>
+
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <a class="feature" href="#workout">
+        <div class="icon">🏋️</div>
+        <h3>POWER TRAINING</h3>
+        <p>
+            Build strength with structured workouts
+            designed for your fitness level.
+        </p>
+    </a>
+
+    <a class="feature" href="#nutrition">
+        <div class="icon">🥗</div>
+        <h3>SMART NUTRITION</h3>
+        <p>
+            Eat better with simple nutrition guidance
+            designed around your fitness goals.
+        </p>
+    </a>
+
+    <a class="feature" href="#profile">
+        <div class="icon">📈</div>
+        <h3>TRACK PROGRESS</h3>
+        <p>
+            Track your workouts, measurements and
+            progress as you move toward your goals.
+        </p>
+    </a>
+
+ </section>
+
+
+
+<!-- ================= PROGRAMS ================= -->
+
+<section class="programs" id="programs">
+
+    <div class="section-heading">
+
+        <p>TRAIN WITH PURPOSE</p>
+
+        <h2>OUR <span>PROGRAMS</span></h2>
+
+        <p class="description">
+            Choose a training program that matches your
+            goal and fitness level.
+        </p>
+
+    </div>
+
+
+
+    <div class="program-container">
+
+        <div class="program-card">
+
+            <div class="program-number">01</div>
+
+            <h3>BUILD MUSCLE</h3>
+
+            <p>
+                Progressive strength workouts designed
+                to help you build lean muscle and strength.
+            </p>
+
+            <a href="#">VIEW PROGRAM →</a>
+
+        </div>
+
+
+
+        <div class="program-card active">
+
+            <div class="program-number">02</div>
+
+            <h3>FAT LOSS</h3>
+
+            <p>
+                High-energy workouts combined with
+                sustainable nutrition habits.
+            </p>
+
+            <a href="#">VIEW PROGRAM →</a>
+
+        </div>
+
+
+
+        <div class="program-card">
+
+            <div class="program-number">03</div>
+
+            <h3>STRENGTH</h3>
+
+            <p>
+                Improve your power, endurance and
+                overall athletic performance.
+            </p>
+
+            <a href="#">VIEW PROGRAM →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-image">
+
+        <div class="image-box">
+            <span>RONNIE</span>
+            <strong>FITZZ</strong>
+        </div>
+
+    </div>
+
+
+
+    <div class="about-content">
+
+        <p class="small-title">ABOUT RONNIE FITZZ</p>
+
+        <h2>
+            DISCIPLINE
+            <span>CREATES</span>
+            RESULTS.
+        </h2>
+
+        <p>
+            Ronnie Fitzz is a fitness platform created for
+            people who want to become stronger, healthier
+            and more confident.
+        </p>
+
+        <p>
+            Whether you are a beginner or an experienced
+            athlete, our programs help you stay consistent
+            and focused on your fitness journey.
+        </p>
+
+        <div class="about-stats">
+
+            <div>
+                <strong>5K+</strong>
+                <small>Members</small>
+            </div>
+
+            <div>
+                <strong>12+</strong>
+                <small>Programs</small>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <small>Motivation</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+<!-- ================= WORKOUT SECTION ================= -->
+
+<section class="workout" id="workout">
+
+    <div class="section-heading">
+
+        <p>YOUR <span id="workoutLevel">BEGINNER</span> ROUTINE</p>
+
+        <h2>TODAY'S <span>WORKOUT</span></h2>
+
+    </div>
+
+
+
+    <div class="workout-box">
+
+        <div class="workout-header">
+
+            <div>
+                <p>MONDAY</p>
+                <h3 id="workoutTitle">CHEST & TRICEPS</h3>
+            </div>
+
+            <div class="duration">
+                <strong id="workoutDuration">45</strong>
+                <small>MIN</small>
+            </div>
+
+        </div>
+
+
+
+        <div class="exercise">
+
+            <div>
+                <h4>Bench Press</h4>
+                <p>Chest • Strength</p>
+            </div>
+
+            <strong>4 × 10</strong>
+
+        </div>
+
+
+
+        <div class="exercise">
+
+            <div>
+                <h4>Incline Dumbbell Press</h4>
+                <p>Upper Chest</p>
+            </div>
+
+            <strong>3 × 12</strong>
+
+        </div>
+
+
+
+        <div class="exercise">
+
+            <div>
+                <h4>Tricep Pushdown</h4>
+                <p>Triceps</p>
+            </div>
+
+            <strong>3 × 15</strong>
+
+        </div>
+
+
+
+        <a href="#workout" class="primary-btn workout-btn" id="startWorkoutButton">
+            START WORKOUT
+        </a>
+        <p class="workout-message" id="workoutMessage" role="status"></p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= NUTRITION ================= -->
+
+<section class="nutrition" id="nutrition">
+
+    <div class="nutrition-content">
+
+        <p class="small-title">FUEL YOUR BODY</p>
+
+        <h2>
+            EAT SMART.
+            <span>GET STRONG.</span>
+        </h2>
+
+        <p>
+            Training is only one part of your transformation.
+            Support your fitness goals with balanced nutrition,
+            proper hydration and consistent healthy habits.
+        </p>
+
+        <div class="nutrition-list">
+
+            <div>
+                <span>✓</span>
+                <p>Balanced Meals</p>
+            </div>
+
+            <div>
+                <span>✓</span>
+                <p>Protein-Rich Foods</p>
+            </div>
+
+            <div>
+                <span>✓</span>
+                <p>Proper Hydration</p>
+            </div>
+
+            <div>
+                <span>✓</span>
+                <p>Healthy Lifestyle</p>
+            </div>
+
+        </div>
+
+        <a href="#dietDetails" class="primary-btn">EXPLORE NUTRITION</a>
+
+    </div>
+
+    <div class="diet-details" id="dietDetails">
+        <p class="small-title">YOUR PERSONAL PLAN</p>
+        <h3 id="dietTitle">BEGINNER BALANCED DIET</h3>
+        <p id="dietDescription">A simple plan with balanced meals to build healthy consistency.</p>
+        <div class="diet-meals">
+            <div>
+                <strong>BREAKFAST</strong>
+                <span id="breakfastMeal">Oats, fruit and Greek yogurt</span>
+            </div>
+            <div>
+                <strong>LUNCH</strong>
+                <span id="lunchMeal">Rice, vegetables and grilled chicken</span>
+            </div>
+            <div>
+                <strong>DINNER</strong>
+                <span id="dinnerMeal">Whole grains, vegetables and lean protein</span>
+            </div>
+            <div>
+                <strong>HYDRATION</strong>
+                <span>Drink water throughout the day</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- ================= JOIN SECTION ================= -->
+
+<section class="join" id="join">
+
+    <p class="small-title">READY TO CHANGE?</p>
+
+    <h2>
+        YOUR
+        <span>TRANSFORMATION</span>
+        STARTS TODAY.
+    </h2>
+
+    <p>
+        Stop waiting for motivation. Start building
+        discipline and create the strongest version of yourself.
+    </p>
+
+    <a href="#plans" class="primary-btn">JOIN RONNIE FITZZ</a>
+
+</section>
+
+<!-- ================= PERSONAL PLANS ================= -->
+
+<section class="plans" id="plans">
+    <div class="section-heading">
+        <p>YOUR FITNESS ROADMAP</p>
+        <h2>CHOOSE YOUR <span>PLAN</span></h2>
+        <p class="description" id="plansDescription">
+            Plans are matched to your saved fitness details.
+        </p>
+    </div>
+
+    <div class="plan-container">
+        <article class="plan-card featured-plan">
+            <p class="plan-label">RECOMMENDED FOR YOU</p>
+            <h3 id="recommendedPlan">FOUNDATION PLAN</h3>
+            <p id="recommendedPlanText">Build consistency with simple workouts and balanced meals.</p>
+            <a href="#workout" class="secondary-btn">VIEW WORKOUT</a>
+        </article>
+
+        <article class="plan-card">
+            <p class="plan-label">NUTRITION SUPPORT</p>
+            <h3 id="nutritionPlan">BALANCED DIET PLAN</h3>
+            <p>Follow your personalized meals, hydration guidance and daily nutrition targets.</p>
+            <a href="#dietDetails" class="secondary-btn">VIEW DIET</a>
+        </article>
+
+        <article class="plan-card">
+            <p class="plan-label">PROGRESS TRACKING</p>
+            <h3>PROFILE CHECK-IN</h3>
+            <p>Update your measurements and fitness details whenever your goals change.</p>
+            <a href="#profile" class="secondary-btn">UPDATE PROFILE</a>
+        </article>
+    </div>
+</section>
+
+
+
+    <section class="profile" id="profile">
+
+<div class="section-heading">
+    <p>YOUR FITNESS ACCOUNT</p>
+    <h2>MY <span>PROFILE</span></h2>
+    <p class="description">
+        Create your profile and enter your fitness details.
+    </p>
+</div>
+<div class="profile-container">
+
+    <form class="profile-form" id="profileForm">
+
+        <!-- Personal Details -->
+        <h3>PERSONAL DETAILS</h3>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text"
+                       placeholder="Enter your full name"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email"
+                       placeholder="Enter your email"
+                       required>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel"
+                       placeholder="Enter phone number"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number"
+                       placeholder="Enter your age"
+                       min="13"
+                       max="100">
+            </div>
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Gender</label>
+
+                <select>
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Fitness Goal</label>
+
+                <select name="fitnessGoal">
+                    <option value="">Select Goal</option>
+                    <option>Build Strength</option>
+                    <option>Improve Fitness</option>
+                    <option>General Health</option>
+                    <option>Improve Endurance</option>
+                </select>
+            </div>
+
+        </div>
+
+
+
+        <!-- Fitness Details -->
+
+        <h3>FITNESS DETAILS</h3>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Height (cm)</label>
+                <input type="number"
+                       placeholder="Enter height">
+            </div>
+
+            <div class="form-group">
+                <label>Weight (kg)</label>
+                <input type="number"
+                       placeholder="Enter weight">
+            </div>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Activity Level</label>
+
+            <select name="activityLevel">
+                <option value="">Select Activity Level</option>
+                <option>Beginner</option>
+                <option>Lightly Active</option>
+                <option>Moderately Active</option>
+                <option>Very Active</option>
+            </select>
+
+        </div>
+
+
+
+        <!-- Account Details -->
+
+        <h3>ACCOUNT SECURITY</h3>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Password</label>
+
+                <input type="password"
+                       placeholder="Create password"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Confirm Password</label>
+
+                <input type="password"
+                       placeholder="Confirm password"
+                       required>
+            </div>
+
+        </div>
+
+
+
+        <button type="submit" class="primary-btn profile-btn">
+            SAVE PROFILE
+        </button>
+        <p class="profile-message" id="profileMessage" role="status"></p>
+
+    </form>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+    <div class="footer-content">
+
+        <div>
+            <div class="logo">
+                RONNIE <span>FITZZ</span>
+            </div>
+
+            <p>
+                Train hard. Stay consistent.
+                Become stronger.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4>QUICK LINKS</h4>
             <a href="#home">Home</a>
             <a href="#programs">Programs</a>
             <a href="#about">About</a>
             <a href="#nutrition">Nutrition</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <a href="#join" class="nav-btn">JOIN NOW</a>
-
-    </header>
-
-
-    <!-- ================= HERO SECTION ================= -->
-
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <p class="small-title">NO EXCUSES. JUST RESULTS.</p>
-
-            <h1>
-                BUILD YOUR
-                <span>STRONGEST</span>
-                SELF.
-            </h1>
-
-            <p class="hero-text">
-                Train harder. Eat smarter. Stay consistent.
-                Ronnie Fitzz helps you build strength, improve
-                fitness and achieve the body you want.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#programs" class="primary-btn">START TRAINING</a>
-                <a href="#about" class="secondary-btn">LEARN MORE</a>
-            </div>
-
         </div>
 
-        <div class="hero-card">
-
-            <div class="stat-card">
-                <h3>12+</h3>
-                <p>Training Programs</p>
-            </div>
-
-            <div class="stat-card">
-                <h3>5K+</h3>
-                <p>Fitness Members</p>
-            </div>
-
-            <div class="stat-card">
-                <h3>100%</h3>
-                <p>Motivation</p>
-            </div>
-
+        <div class="footer-links">
+            <h4>CONTACT</h4>
+            <p>Email: hello@ronniefitzz.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Chennai, India</p>
         </div>
 
-    </section>
-
-
-    <!-- ================= FEATURES ================= -->
-
-    <section class="features">
-
-        <div class="feature">
-            <div class="icon">🏋️</div>
-            <h3>POWER TRAINING</h3>
-            <p>
-                Build strength with structured workouts
-                designed for your fitness level.
-            </p>
-        </div>
-
-        <div class="feature">
-            <div class="icon">🥗</div>
-            <h3>SMART NUTRITION</h3>
-            <p>
-                Eat better with simple nutrition guidance
-                designed around your fitness goals.
-            </p>
-        </div>
-
-        <div class="feature">
-            <div class="icon">📈</div>
-            <h3>TRACK PROGRESS</h3>
-            <p>
-                Track your workouts, measurements and
-                progress as you move toward your goals.
-            </p>
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROGRAMS ================= -->
-
-    <section class="programs" id="programs">
-
-        <div class="section-heading">
-
-            <p>TRAIN WITH PURPOSE</p>
-
-            <h2>OUR <span>PROGRAMS</span></h2>
-
-            <p class="description">
-                Choose a training program that matches your
-                goal and fitness level.
-            </p>
-
-        </div>
-
-
-        <div class="program-container">
-
-            <div class="program-card">
-
-                <div class="program-number">01</div>
-
-                <h3>BUILD MUSCLE</h3>
-
-                <p>
-                    Progressive strength workouts designed
-                    to help you build lean muscle and strength.
-                </p>
-
-                <a href="#">VIEW PROGRAM →</a>
-
-            </div>
-
-
-            <div class="program-card active">
-
-                <div class="program-number">02</div>
-
-                <h3>FAT LOSS</h3>
-
-                <p>
-                    High-energy workouts combined with
-                    sustainable nutrition habits.
-                </p>
-
-                <a href="#">VIEW PROGRAM →</a>
-
-            </div>
-
-
-            <div class="program-card">
-
-                <div class="program-number">03</div>
-
-                <h3>STRENGTH</h3>
-
-                <p>
-                    Improve your power, endurance and
-                    overall athletic performance.
-                </p>
-
-                <a href="#">VIEW PROGRAM →</a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="about" id="about">
-
-        <div class="about-image">
-
-            <div class="image-box">
-                <span>RONNIE</span>
-                <strong>FITZZ</strong>
-            </div>
-
-        </div>
-
-
-        <div class="about-content">
-
-            <p class="small-title">ABOUT RONNIE FITZZ</p>
-
-            <h2>
-                DISCIPLINE
-                <span>CREATES</span>
-                RESULTS.
-            </h2>
-
-            <p>
-                Ronnie Fitzz is a fitness platform created for
-                people who want to become stronger, healthier
-                and more confident.
-            </p>
-
-            <p>
-                Whether you are a beginner or an experienced
-                athlete, our programs help you stay consistent
-                and focused on your fitness journey.
-            </p>
-
-            <div class="about-stats">
-
-                <div>
-                    <strong>5K+</strong>
-                    <small>Members</small>
-                </div>
-
-                <div>
-                    <strong>12+</strong>
-                    <small>Programs</small>
-                </div>
-
-                <div>
-                    <strong>24/7</strong>
-                    <small>Motivation</small>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= WORKOUT SECTION ================= -->
-
-    <section class="workout">
-
-        <div class="section-heading">
-
-            <p>YOUR DAILY ROUTINE</p>
-
-            <h2>TODAY'S <span>WORKOUT</span></h2>
-
-        </div>
-
-
-        <div class="workout-box">
-
-            <div class="workout-header">
-
-                <div>
-                    <p>MONDAY</p>
-                    <h3>CHEST & TRICEPS</h3>
-                </div>
-
-                <div class="duration">
-                    <strong>45</strong>
-                    <small>MIN</small>
-                </div>
-
-            </div>
-
-
-            <div class="exercise">
-
-                <div>
-                    <h4>Bench Press</h4>
-                    <p>Chest • Strength</p>
-                </div>
-
-                <strong>4 × 10</strong>
-
-            </div>
-
-
-            <div class="exercise">
-
-                <div>
-                    <h4>Incline Dumbbell Press</h4>
-                    <p>Upper Chest</p>
-                </div>
-
-                <strong>3 × 12</strong>
-
-            </div>
-
-
-            <div class="exercise">
-
-                <div>
-                    <h4>Tricep Pushdown</h4>
-                    <p>Triceps</p>
-                </div>
-
-                <strong>3 × 15</strong>
-
-            </div>
-
-
-            <a href="#" class="primary-btn workout-btn">
-                START WORKOUT
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= NUTRITION ================= -->
-
-    <section class="nutrition" id="nutrition">
-
-        <div class="nutrition-content">
-
-            <p class="small-title">FUEL YOUR BODY</p>
-
-            <h2>
-                EAT SMART.
-                <span>GET STRONG.</span>
-            </h2>
-
-            <p>
-                Training is only one part of your transformation.
-                Support your fitness goals with balanced nutrition,
-                proper hydration and consistent healthy habits.
-            </p>
-
-            <div class="nutrition-list">
-
-                <div>
-                    <span>✓</span>
-                    <p>Balanced Meals</p>
-                </div>
-
-                <div>
-                    <span>✓</span>
-                    <p>Protein-Rich Foods</p>
-                </div>
-
-                <div>
-                    <span>✓</span>
-                    <p>Proper Hydration</p>
-                </div>
-
-                <div>
-                    <span>✓</span>
-                    <p>Healthy Lifestyle</p>
-                </div>
-
-            </div>
-
-            <a href="#" class="primary-btn">EXPLORE NUTRITION</a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= JOIN SECTION ================= -->
-
-    <section class="join" id="join">
-
-        <p class="small-title">READY TO CHANGE?</p>
-
-        <h2>
-            YOUR
-            <span>TRANSFORMATION</span>
-            STARTS TODAY.
-        </h2>
-
-        <p>
-            Stop waiting for motivation. Start building
-            discipline and create the strongest version of yourself.
-        </p>
-
-        <a href="#" class="primary-btn">JOIN RONNIE FITZZ</a>
-
-    </section>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer id="contact">
-
-        <div class="footer-content">
-
-            <div>
-                <div class="logo">
-                    RONNIE <span>FITZZ</span>
-                </div>
-
-                <p>
-                    Train hard. Stay consistent.
-                    Become stronger.
-                </p>
-            </div>
-
-
-            <div class="footer-links">
-
-                <h4>QUICK LINKS</h4>
-
-                <a href="#home">Home</a>
-                <a href="#programs">Programs</a>
-                <a href="#about">About</a>
-                <a href="#nutrition">Nutrition</a>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <h4>CONTACT</h4>
-
-                <p>Email: hello@ronniefitzz.com</p>
-                <p>Phone: +91 98765 43210</p>
-                <p>Chennai, India</p>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
-            © 2026 Ronnie Fitzz. All Rights Reserved.
-        </div>
-
-    </footer>
+    </div>
+
+    <div class="copyright">
+        © 2026 Ronnie Fitzz. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script>
+    const loginForm = document.getElementById('loginForm');
+    const loginMessage = document.getElementById('loginMessage');
+    const logoutButton = document.getElementById('logoutButton');
+    const profileForm = document.getElementById('profileForm');
+    const profileMessage = document.getElementById('profileMessage');
+    const workoutLevel = document.getElementById('workoutLevel');
+    const workoutTitle = document.getElementById('workoutTitle');
+    const workoutDuration = document.getElementById('workoutDuration');
+    const workoutMessage = document.getElementById('workoutMessage');
+    const startWorkoutButton = document.getElementById('startWorkoutButton');
+    const dietTitle = document.getElementById('dietTitle');
+    const dietDescription = document.getElementById('dietDescription');
+    const breakfastMeal = document.getElementById('breakfastMeal');
+    const lunchMeal = document.getElementById('lunchMeal');
+    const dinnerMeal = document.getElementById('dinnerMeal');
+    const plansDescription = document.getElementById('plansDescription');
+    const recommendedPlan = document.getElementById('recommendedPlan');
+    const recommendedPlanText = document.getElementById('recommendedPlanText');
+    const nutritionPlan = document.getElementById('nutritionPlan');
+
+    function updateWorkoutForUser() {
+        let activityLevel = 'Beginner';
+        const savedProfile = localStorage.getItem('ronnieFitzzProfile');
+
+        if (savedProfile) {
+            const profile = JSON.parse(savedProfile);
+            activityLevel = profile.activityLevel || 'Beginner';
+        }
+
+        const workoutByLevel = {
+            Beginner: { title: 'FULL BODY FOUNDATION', duration: '30' },
+            'Lightly Active': { title: 'CHEST & TRICEPS', duration: '45' },
+            'Moderately Active': { title: 'STRENGTH CIRCUIT', duration: '50' },
+            'Very Active': { title: 'ADVANCED POWER SESSION', duration: '60' }
+        };
+        const workout = workoutByLevel[activityLevel] || workoutByLevel.Beginner;
+
+        workoutLevel.textContent = activityLevel.toUpperCase();
+        workoutTitle.textContent = workout.title;
+        workoutDuration.textContent = workout.duration;
+    }
+
+    function updateDietForUser() {
+        let goal = 'General Health';
+        let activityLevel = 'Beginner';
+        const savedProfile = localStorage.getItem('ronnieFitzzProfile');
+
+        if (savedProfile) {
+            const profile = JSON.parse(savedProfile);
+            goal = profile.fitnessGoal || 'General Health';
+            activityLevel = profile.activityLevel || 'Beginner';
+        }
+
+        const dietByGoal = {
+            'Build Strength': {
+                title: 'STRENGTH-BUILDING DIET',
+                description: 'Prioritize protein, complex carbohydrates and enough calories to support training.',
+                breakfast: 'Eggs, oats, banana and Greek yogurt',
+                lunch: 'Chicken, rice, vegetables and avocado',
+                dinner: 'Salmon, potatoes, salad and cottage cheese'
+            },
+            'Improve Fitness': {
+                title: 'FITNESS PERFORMANCE DIET',
+                description: 'Fuel your workouts with balanced meals and steady energy throughout the day.',
+                breakfast: 'Oats, berries, yogurt and nuts',
+                lunch: 'Turkey wrap, sweet potato and vegetables',
+                dinner: 'Lean protein, quinoa and mixed vegetables'
+            },
+            'Improve Endurance': {
+                title: 'ENDURANCE FUEL PLAN',
+                description: 'Use carbohydrate-rich whole foods and hydration to support longer sessions.',
+                breakfast: 'Oats, banana, honey and yogurt',
+                lunch: 'Rice bowl with lean protein and vegetables',
+                dinner: 'Whole-wheat pasta, beans and salad'
+            },
+            'General Health': {
+                title: 'BALANCED HEALTHY DIET',
+                description: 'A flexible mix of protein, vegetables, whole grains and healthy fats.',
+                breakfast: 'Oats, fruit and Greek yogurt',
+                lunch: 'Rice, vegetables and grilled chicken',
+                dinner: 'Whole grains, vegetables and lean protein'
+            }
+        };
+        const diet = dietByGoal[goal] || dietByGoal['General Health'];
+
+        dietTitle.textContent = `${activityLevel.toUpperCase()} ${diet.title}`;
+        dietDescription.textContent = diet.description;
+        breakfastMeal.textContent = diet.breakfast;
+        lunchMeal.textContent = diet.lunch;
+        dinnerMeal.textContent = diet.dinner;
+    }
+
+    function updatePlansForUser() {
+        let goal = 'General Health';
+        let activityLevel = 'Beginner';
+        const savedProfile = localStorage.getItem('ronnieFitzzProfile');
+
+        if (savedProfile) {
+            const profile = JSON.parse(savedProfile);
+            goal = profile.fitnessGoal || 'General Health';
+            activityLevel = profile.activityLevel || 'Beginner';
+        }
+
+        const planByGoal = {
+            'Build Strength': {
+                plan: 'STRENGTH BUILDER',
+                text: 'Progressive strength sessions and protein-focused meals to support muscle growth.',
+                diet: 'STRENGTH-BUILDING DIET'
+            },
+            'Improve Fitness': {
+                plan: 'FITNESS PERFORMANCE',
+                text: 'Balanced cardio, strength training and steady nutrition for everyday performance.',
+                diet: 'FITNESS PERFORMANCE DIET'
+            },
+            'Improve Endurance': {
+                plan: 'ENDURANCE BUILDER',
+                text: 'Conditioning sessions, recovery days and carbohydrate-rich meals for longer workouts.',
+                diet: 'ENDURANCE FUEL PLAN'
+            },
+            'General Health': {
+                plan: 'FOUNDATION PLAN',
+                text: 'Simple full-body workouts and balanced meals to build healthy consistency.',
+                diet: 'BALANCED HEALTHY DIET'
+            }
+        };
+        const plan = planByGoal[goal] || planByGoal['General Health'];
+
+        plansDescription.textContent = `${activityLevel} level plan for your ${goal.toLowerCase()} goal.`;
+        recommendedPlan.textContent = plan.plan;
+        recommendedPlanText.textContent = plan.text;
+        nutritionPlan.textContent = plan.diet;
+    }
+
+    updateWorkoutForUser();
+    updateDietForUser();
+    updatePlansForUser();
+
+    function setAuthenticated(isAuthenticated) {
+        document.body.classList.toggle('authenticated', isAuthenticated);
+        if (isAuthenticated) {
+            window.location.hash = 'home';
+        }
+    }
+
+    if (localStorage.getItem('ronnieFitzzLoggedIn') === 'true') {
+        setAuthenticated(true);
+    }
+
+    loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const email = document.getElementById('loginEmail').value.trim();
+        const password = document.getElementById('loginPassword').value;
+
+        if (!email || password.length < 6) {
+            loginMessage.textContent = 'Enter a valid email and a password with at least 6 characters.';
+            return;
+        }
+
+        localStorage.setItem('ronnieFitzzLoggedIn', 'true');
+        loginMessage.textContent = '';
+        setAuthenticated(true);
+    });
+
+    logoutButton.addEventListener('click', function () {
+        localStorage.removeItem('ronnieFitzzLoggedIn');
+        setAuthenticated(false);
+        window.scrollTo(0, 0);
+    });
+
+    profileForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const formData = new FormData(profileForm);
+        const passwords = profileForm.querySelectorAll('input[type="password"]');
+
+        if (passwords[0].value !== passwords[1].value) {
+            profileMessage.textContent = 'Passwords do not match.';
+            return;
+        }
+
+        const profileDetails = Object.fromEntries(
+            Array.from(profileForm.querySelectorAll('input, select')).map(function (field, index) {
+                return [field.name || field.placeholder || `field-${index}`, field.value];
+            })
+        );
+        localStorage.setItem('ronnieFitzzProfile', JSON.stringify(profileDetails));
+        profileMessage.textContent = 'Profile saved successfully.';
+        updateWorkoutForUser();
+        updateDietForUser();
+        updatePlansForUser();
+    });
+
+    startWorkoutButton.addEventListener('click', function () {
+        updateWorkoutForUser();
+        workoutMessage.textContent = 'Your personalized workout is ready.';
+    });
+</script>
 
 </body>
 </html>
